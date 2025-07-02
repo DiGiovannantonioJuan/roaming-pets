@@ -36,6 +36,7 @@ public class RoamingPets implements ModInitializer {
                 rt.rp$setRoaming(false, null);
                 removeGoal(goals, RoamAroundHomeGoal.class);
                 goals.add(5, new FollowOwnerGoal(pet, 1.0D, 10.0F, 2.0F)); // ← firma nueva
+                pet.setSitting(true);
                 player.sendMessage(Text.translatable("msg.roamingpets.disabled"), true);
             }
             return ActionResult.SUCCESS;
