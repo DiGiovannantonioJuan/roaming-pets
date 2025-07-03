@@ -1,17 +1,1 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()                    // 1º: plugin markers genéricos
-        maven { url = 'https://maven.fabricmc.net/' }  // 2º: repositorio de Fabric
-    }
-
-    // --- ¡CLAVE! Hace que `fabric-loom` use el módulo correcto -------------
-    resolutionStrategy {
-        eachPlugin {
-            if (requested.id.id == "fabric-loom") {
-                useModule("net.fabricmc:fabric-loom:${requested.version}")
-            }
-        }
-    }
-}
-
-rootProject.name = "roaming-pets"
+rootProject.name = 'sword-block-mod'

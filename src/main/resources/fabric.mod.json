@@ -1,22 +1,23 @@
 {
 	"schemaVersion": 1,
-	"id": "roamingpets",
-	"name": "Roaming Pets",
+	"id": "sword-block",
 	"version": "${version}",
+	"name": "Sword Blocking Restored",
+	"description": "Restaura la habilidad de bloquear con espada en 1.21.6",
 	"authors": [
-		"Obi-Juan-Bonomi"
+		"Juan Andres Di Giovannantonio"
 	],
 	"entrypoints": {
 		"main": [
-			"com.obijuanbonomi.roamingpets.RoamingPets"
+			"com.obijuanbonomi.swordblock.SwordBlockMod"
 		]
 	},
 	"mixins": [
-		"roamingpets.mixins.json"
+		"sword-block.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "1.21.7",
-		"fabric": "*"
+		"fabricloader": ">=0.14.5",
+		"fabric": "*",
+		"minecraft": "1.21.6"
 	}
 }
